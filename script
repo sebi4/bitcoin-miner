@@ -1,0 +1,190 @@
+if game.PlaceId == 2629642516 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Bitcoin Miner ⛏️", "Midnight")
+
+    -- Main
+
+    local GraphicTab = Window:NewTab("Buy Graphic Cards")
+    local GraphicSection = GraphicTab:NewSection("Buy Graphic Cards")
+
+    GraphicSection:NewButton("Budget", "Buy", function()
+        print("Clicked")
+
+        local args = {
+            [1] = "Budget Graphic Card",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("1"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+
+    GraphicSection:NewButton("Weak", "Buy", function()
+        print("Clicked")
+        
+        local args = {
+            [1] = "Weak Graphic Card",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("2"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+
+    GraphicSection:NewButton("Slow", "Buy", function()
+        print("Clicked")
+        
+        local args = {
+            [1] = "Slow Graphic Card",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("3"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+
+    
+    GraphicSection:NewButton("Double Fan", "Buy", function()
+        print("Clicked")
+        
+        local args = {
+            [1] = "Double Fan Card",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("4"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+
+    GraphicSection:NewButton("Mining Device", "Buy", function()
+        print("Clicked")
+        
+        local args = {
+            [1] = "Mining Device",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("5"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+
+    GraphicSection:NewButton("Mining Device V2", "Buy", function()
+        print("Clicked")
+        
+        local args = {
+            [1] = "Mining Device V2",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("6"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+
+    GraphicSection:NewButton("Silver Card", "Buy", function()
+        print("Clicked")
+        
+        local args = {
+            [1] = "Silver Card",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("7"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+
+    GraphicSection:NewButton("Diamond Card", "Buy", function()
+        print("Clicked")
+        
+        local args = {
+            [1] = "Diamond Card",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("8"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+
+    GraphicSection:NewButton("GeProce PTX 970", "Buy", function()
+        print("Clicked")
+        
+        local args = {
+            [1] = "GeProce PTX 970",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("9"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+
+    GraphicSection:NewButton("GeProce PTX 1050", "Buy", function()
+        print("Clicked")
+        
+        local args = {
+            [1] = "GeProce PTX 1050",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("10"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+
+    GraphicSection:NewButton("GeProce PTX 1080", "Buy", function()
+        print("Clicked")
+        
+        local args = {
+            [1] = "GeProce PTX 1080",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("11"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+
+    GraphicSection:NewButton("GeProceHTX 2000", "Buy", function()
+        print("Clicked")
+        
+        local args = {
+            [1] = "GeProceHTX 2000",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("12"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+
+    GraphicSection:NewButton("Radon 6000", "Buy", function()
+        print("Clicked")
+        
+        local args = {
+            [1] = "Radon 6000",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("13"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+
+    GraphicSection:NewButton("GeProceHTX 3000", "Buy", function()
+        print("Clicked")
+        
+        local args = {
+            [1] = "GeProceHTX 3000",
+            [2] = workspace.Shops.Region_shop.Shows:FindFirstChild("14"),
+            [3] = 1
+        }
+        
+        game:GetService("ReplicatedStorage").Events.BuyCard:FireServer(unpack(args))
+    end)
+    
+    local PlayerTab = Window:NewTab("Player")
+    local PlayerSection = PlayerTab:NewSection("Speed And Jump")
+
+    PlayerSection:NewSlider("WalkSpeed", "Gives Player Speed", 250, 16, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+    end)
+
+    PlayerSection:NewSlider("JumpPower", "Gives Player JumpPower", 250, 50, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+    end)
+
+end
